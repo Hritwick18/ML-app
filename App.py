@@ -1,6 +1,7 @@
 
 import streamlit as st
 import pandas as pd
+from lazypredict.Supervised import LazyRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
@@ -37,7 +38,7 @@ def build_model(df):
 
     # Build lazy model
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y,test_size = split_size,random_state = seed_number)
-    reg = RandomForestRegressor(verbose=0,ignore_warnings=False, custom_metric=None)
+    reg = LazyRegressor(verbose=0,ignore_warnings=False, custom_metric=None)
     models_train,predictions_train = reg.fit(X_train, X_train, Y_train, Y_train)
     models_test,predictions_test = reg.fit(X_train, X_test, Y_train, Y_test)
 
