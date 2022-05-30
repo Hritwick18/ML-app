@@ -15,7 +15,7 @@ import pickle
 #---------------------------------#
 # Page layout
 ## Page expands to full width
-st.set_page_config(page_title='The Machine Learning Algorithm Comparison App Using Random Forest Regressor',
+st.set_page_config(page_title='The Machine Learning Algorithm Comparison App Using Linear Regressor',
     layout='wide')
 #---------------------------------#
 # Model building
@@ -134,7 +134,7 @@ def download_model(model):
 
 #---------------------------------#
 st.write("""
-# The Machine Learning Algorithm Comparison App Using Random Forest Regressor
+# The Machine Learning Algorithm Comparison App Using linear Regressor
 
 Developed by: [Nikhil Jain , Hritwick Goyal , Prakhar Mehrishi]
 
