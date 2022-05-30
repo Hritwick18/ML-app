@@ -15,7 +15,7 @@ import pickle
 #---------------------------------#
 # Page layout
 ## Page expands to full width
-st.set_page_config(page_title='The Machine Learning Algorithm Comparison App',
+st.set_page_config(page_title='The Machine Learning Algorithm Comparison App Using Random Forest Regressor',
     layout='wide')
 #---------------------------------#
 # Model building
