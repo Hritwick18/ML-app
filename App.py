@@ -134,7 +134,7 @@ def download_model(model):
 
 #---------------------------------#
 st.write("""
-# The Machine Learning Algorithm Comparison App
+# The Machine Learning Algorithm Comparison App Using Random Forest Regressor
 
 Developed by: [Nikhil Jain , Hritwick Goyal , Prakhar Mehrishi]
 
