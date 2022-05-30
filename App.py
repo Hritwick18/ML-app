@@ -39,7 +39,7 @@ def build_model(df):
     # Build lazy model
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y,test_size = split_size,random_state = seed_number)
 #     reg = LazyRegressor(verbose=0,ignore_warnings=False, custom_metric=None)
-    reg = RandomForestRegressor(verbose=0,ignore_warnings=False, custom_metric=None)
+    reg = RandomForestRegressor(n_estimators = 100, random_state = 0)
     models_train,predictions_train = reg.fit(X_train, X_train, Y_train, Y_train)
     models_test,predictions_test = reg.fit(X_train, X_test, Y_train, Y_test)
 
